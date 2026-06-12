@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eight Two Eight — 828</title>
+  <meta name="description" content="Eight Two Eight — Tecnología, Belleza y Hogar. Productos curados para quienes no se conforman." />
+  <meta property="og:title" content="Eight Two Eight — 828" />
+  <meta property="og:description" content="Tecnología, Belleza y Hogar. Productos curados para quienes no se conforman." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=DM+Sans:wght@200;300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ── WHATSAPP FLOTANTE ── -->
+  <a id="wa-float" href="#" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <!-- ── NAVBAR ── -->
+  <nav id="navbar">
+    <button class="nav-menu" id="menu-btn" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="#inicio" class="nav-logo">
+      <span class="nl-name">Eight Two Eight</span>
+      <span class="nl-line"></span>
+      <span class="nl-num">828</span>
+    </a>
+    <div class="nav-actions">
+      <button class="nav-search-btn" id="search-btn" aria-label="Buscar">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ── MENÚ MÓVIL ── -->
+  <div class="mobile-menu" id="mobile-menu">
+    <button class="mm-close" id="menu-close" aria-label="Cerrar menú">✕</button>
+    <div class="mm-logo">
+      <span class="nl-name">Eight Two Eight</span>
+      <span class="nl-line"></span>
+      <span class="nl-num">828</span>
+    </div>
+    <nav class="mm-nav">
+      <a href="#inicio" class="mm-link">Inicio</a>
+      <a href="#categorias" class="mm-link">Categorías</a>
+      <a href="#productos" class="mm-link">Productos</a>
+      <a href="#nosotros" class="mm-link">Nosotros</a>
+      <a href="#contacto" class="mm-link">Contacto</a>
+    </nav>
+    <div class="mm-bottom">
+      <div class="mm-tag">Tecnología · Belleza · Hogar</div>
+    </div>
+  </div>
+  <div class="mm-overlay" id="mm-overlay"></div>
+
+  <!-- ── BUSCADOR ── -->
+  <div class="search-overlay" id="search-overlay">
+    <button class="search-close" id="search-close">✕</button>
+    <input type="text" id="search-input" placeholder="¿Qué estás buscando?" autocomplete="off" />
+    <div class="search-results" id="search-results"></div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       SECCIÓN 1 · HERO
+  ══════════════════════════════════════════ -->
+  <section class="hero" id="inicio">
+    <div class="hero-inner">
+      <div class="hero-eyebrow">Colombia · Elevated Living</div>
+      <div class="hero-logo-block">
+        <span class="hlb-name">Eight Two Eight</span>
+        <div class="hlb-rule"><div class="hlb-line"></div><div class="hlb-diamond"></div><div class="hlb-line"></div></div>
+        <span class="hlb-num">828</span>
+      </div>
+      <p class="hero-claim">Para quienes no se conforman.</p>
+      <div class="hero-ctas">
+        <a href="#productos" class="btn-primary">Explorar colección</a>
+        <a href="#categorias" class="btn-secondary">Ver categorías</a>
+      </div>
+      <div class="hero-cats">
+        <span>Tecnología</span>
+        <span class="dot">·</span>
+        <span>Belleza</span>
+        <span class="dot">·</span>
+        <span>Hogar</span>
+      </div>
+    </div>
+    <div class="hero-scroll" aria-hidden="true">
+      <div class="hs-line"></div>
+      <span>scroll</span>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       SECCIÓN 2 · CONFIANZA
+  ══════════════════════════════════════════ -->
+  <section class="trust-bar">
+    <div class="container">
+      <div class="trust-grid">
+        <div class="trust-item">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          <div>
+            <div class="ti-title">Compra segura</div>
+            <div class="ti-sub">Pago confirmado antes del envío</div>
+          </div>
+        </div>
+        <div class="trust-item">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          <div>
+            <div class="ti-title">Entrega rápida</div>
+            <div class="ti-sub">3 a 7 días hábiles · Colombia</div>
+          </div>
+        </div>
+        <div class="trust-item">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <div>
+            <div class="ti-title">Selección curada</div>
+            <div class="ti-sub">Cada producto, elegido con criterio</div>
+          </div>
+        </div>
+        <div class="trust-item">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          <div>
+            <div class="ti-title">Atención directa</div>
+            <div class="ti-sub">WhatsApp · Respuesta en minutos</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       SECCIÓN 3 · CATEGORÍAS
+  ══════════════════════════════════════════ -->
+  <section class="categorias" id="categorias">
+    <div class="container">
+      <div class="section-header">
+        <div class="sh-eyebrow">Explora</div>
+        <h2 class="sh-title">Nuestras categorías</h2>
+      </div>
+      <div class="cats-grid">
+        <div class="cat-card" data-cat="Tecnologia" onclick="filtrarCategoria('Tecnologia')">
+          <div class="cc-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          </div>
+          <div class="cc-info">
+            <div class="cc-name">Tecnología</div>
+            <div class="cc-desc">Gadgets y accesorios que cambian tu rutina</div>
+          </div>
+          <div class="cc-arrow">→</div>
+        </div>
+        <div class="cat-card" data-cat="Belleza" onclick="filtrarCategoria('Belleza')">
+          <div class="cc-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a9 9 0 019 9c0 3.18-2.45 7.38-7.34 12.55a.9.9 0 01-1.32 0C7.45 18.38 3 14.18 3 11a9 9 0 019-9z"/></svg>
+          </div>
+          <div class="cc-info">
+            <div class="cc-name">Belleza</div>
+            <div class="cc-desc">Ritual de cuidado elevado al siguiente nivel</div>
+          </div>
+          <div class="cc-arrow">→</div>
+        </div>
+        <div class="cat-card" data-cat="Hogar" onclick="filtrarCategoria('Hogar')">
+          <div class="cc-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <div class="cc-info">
+            <div class="cc-name">Hogar</div>
+            <div class="cc-desc">Espacios que inspiran y objetos que permanecen</div>
+          </div>
+          <div class="cc-arrow">→</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       SECCIÓN 4 · PRODUCTOS
+  ══════════════════════════════════════════ -->
+  <section class="productos" id="productos">
+    <div class="container">
+      <div class="section-header">
+        <div class="sh-eyebrow">Catálogo</div>
+        <h2 class="sh-title">Colección 828</h2>
+      </div>
+      <div class="filtros">
+        <button class="filtro-btn active" onclick="filtrarCategoria('Todos')">Todos</button>
+        <button class="filtro-btn" onclick="filtrarCategoria('Tecnologia')">Tecnología</button>
+        <button class="filtro-btn" onclick="filtrarCategoria('Belleza')">Belleza</button>
+        <button class="filtro-btn" onclick="filtrarCategoria('Hogar')">Hogar</button>
+      </div>
+      <div class="productos-grid" id="productos-grid"></div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       SECCIÓN 5 · NOSOTROS
+  ══════════════════════════════════════════ -->
+  <section class="nosotros" id="nosotros">
+    <div class="container">
+      <div class="nosotros-inner">
+        <div class="nos-left">
+          <div class="sh-eyebrow">Nuestra historia</div>
+          <div class="nos-logo">
+            <span class="nl-name-lg">Eight Two Eight</span>
+            <div class="nos-rule"><div class="hlb-line"></div><div class="hlb-diamond"></div><div class="hlb-line"></div></div>
+            <span class="nl-num-lg">828</span>
+          </div>
+        </div>
+        <div class="nos-right">
+          <h2 class="nos-title">No vendemos productos.<br/>Elevamos tu día a día.</h2>
+          <p class="nos-text">Eight Two Eight nació con una convicción simple: en un mercado saturado de opciones mediocres, alguien tenía que hacer la selección por ti.</p>
+          <p class="nos-text">El 828 es un palíndromo — se lee igual de izquierda a derecha. Eso es lo que somos: consistentes, simétricos, sin sorpresas desagradables. Lo que ves es lo que recibes, y siempre es mejor de lo que esperabas.</p>
+          <p class="nos-text">Trabajamos con proveedores colombianos comprometidos con la calidad. Cada producto que encuentras aquí pasó por nuestra revisión antes de llegar a tus manos.</p>
+          <div class="nos-pillars">
+            <div class="np-item"><span class="np-num">01</span><span class="np-text">Criterio en cada selección</span></div>
+            <div class="np-item"><span class="np-num">02</span><span class="np-text">Proveedores colombianos</span></div>
+            <div class="np-item"><span class="np-num">03</span><span class="np-text">Atención directa y honesta</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       SECCIÓN 6 · CONTACTO
+  ══════════════════════════════════════════ -->
+  <section class="contacto" id="contacto">
+    <div class="container">
+      <div class="contacto-inner">
+        <div class="section-header">
+          <div class="sh-eyebrow">Estamos aquí</div>
+          <h2 class="sh-title">¿Tienes alguna pregunta?</h2>
+        </div>
+        <p class="contacto-sub">Respuesta en minutos, no en días. Escríbenos por WhatsApp y te ayudamos con cualquier duda antes de tu compra.</p>
+        <a id="wa-contacto" href="#" target="_blank" rel="noopener" class="wa-btn">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Escribir por WhatsApp
+        </a>
+        <div class="contacto-info">
+          <a id="mail-link" href="#" class="ci-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <span id="mail-text"></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="fb-name">Eight Two Eight</span>
+          <div class="fb-rule"><div class="hlb-line"></div><div class="hlb-diamond"></div><div class="hlb-line"></div></div>
+          <span class="fb-num">828</span>
+          <p class="fb-desc">Tecnología · Belleza · Hogar<br/>Colombia</p>
+        </div>
+        <div class="footer-links">
+          <div class="fl-col">
+            <div class="fl-title">Tienda</div>
+            <a href="#productos" class="fl-link">Todos los productos</a>
+            <a href="#categorias" class="fl-link">Categorías</a>
+            <a href="#nosotros" class="fl-link">Nosotros</a>
+          </div>
+          <div class="fl-col">
+            <div class="fl-title">Ayuda</div>
+            <a href="#contacto" class="fl-link">Contacto</a>
+            <a href="#faq" class="fl-link">Preguntas frecuentes</a>
+            <a href="#politicas" class="fl-link">Políticas</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="fb-copy">© 2025 Eight Two Eight · Todos los derechos reservados</div>
+        <div class="fb-social" id="fb-social"></div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ── MODAL PRODUCTO ── -->
+  <div class="modal-overlay" id="modal-overlay">
+    <div class="modal" id="modal">
+      <button class="modal-close" id="modal-close">✕</button>
+      <div class="modal-img-wrap">
+        <img id="modal-img" src="" alt="" loading="lazy" />
+        <span class="modal-etiqueta" id="modal-etiqueta"></span>
+      </div>
+      <div class="modal-info">
+        <div class="modal-cat" id="modal-cat"></div>
+        <h3 class="modal-name" id="modal-name"></h3>
+        <div class="modal-price" id="modal-price"></div>
+        <p class="modal-desc" id="modal-desc"></p>
+        <div class="modal-rule"></div>
+        <a class="modal-wa" id="modal-wa" href="#" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Pedir por WhatsApp
+        </a>
+        <button class="modal-share" id="modal-share">Compartir producto</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="productos.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
