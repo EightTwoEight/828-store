@@ -91,7 +91,7 @@ const PRODUCTOS = [
   },
   {
     id: 10,
-    nombre: "Pelota LED 828 · Juego Inteligente",
+    nombre: "Pelota LED · Juego Inteligente",
     precio: "$30.000",
     categoria: "Mascotas",
     etiqueta: "Nuevo",
