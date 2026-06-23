@@ -85,4 +85,18 @@ const PRODUCTOS = [
     precio: "$112.000",
     categoria: "Hogar",
     etiqueta: "Nuevo",
-    descripcion: "6 piezas en bambú y acero inoxidable. Bandeja, porta-lápices y accesorios de
+    descripcion: "6 piezas en bambú y acero inoxidable. Bandeja, porta-lápices y accesorios de escritorio.",
+    imagen: "https://images.pexels.com/photos/6957615/pexels-photo-6957615.jpeg?w=600&h=450&fit=crop",
+    whatsapp: "Hola, me interesa el Set Organizador Premium a $112.000. ¿Está disponible?"
+  }
+];
+
+const CONFIG = {
+  whatsappNumero: "573205584974",
+  nombreTienda: "Eight Two Eight",
+  instagram: "https://instagram.com/828store",
+  tiktok: "",
+  emailContacto: "catabohada@gmail.com",
+  ciudadEnvio: "Colombia",
+  tiempoEntrega: "1 a 2 días hábiles"
+};
