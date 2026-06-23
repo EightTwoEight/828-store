@@ -75,12 +75,15 @@ const PRODUCTOS = [
   // ── HOGAR ───────────────────────────────────────────────
   {
     id: 7,
-    nombre: "Difusor Aromático Nebulizador",
-    precio: "$145.000",
+    nombre: "Limpiador de Ventanas Magnético- Vidrios Brillantes Sin Riesgos",
+    precio: "$35.000",
     categoria: "Hogar",
     etiqueta: "Más vendido",
-    descripcion: "Ultrasónico silencioso, 7 colores LED, apagado automático. Humidifica y aromatiza. 500ml.",
-    imagen: "https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?w=600&q=80",
+    descripcion: "✔️ Limpia ambos lados a la vez
+✔️ Ideal para ventanas y espejos
+✔️ Fácil de usar
+✔️ Acabado impecable",
+    imagen: "https://ibb.co/GQVkCbW4",
     whatsapp: "Hola, me interesa el Difusor Aromático a $145.000. ¿Está disponible?"
   },
   {
