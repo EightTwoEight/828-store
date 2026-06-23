@@ -1,14 +1,4 @@
-// ============================================================
-//  EIGHT TWO EIGHT — TU CATÁLOGO DE PRODUCTOS
-//  ¿Cómo editar? Cambia los valores entre comillas " "
-//  ¿Cómo agregar un producto? Copia un bloque { ... } completo,
-//  pégalo después del último, separa con una coma.
-//  ¿Cómo quitar un producto? Borra el bloque { ... } completo.
-// ============================================================
-
 const PRODUCTOS = [
-
-  // ── TECNOLOGÍA ──────────────────────────────────────────
   {
     id: 1,
     nombre: "Smart Band Pro X",
@@ -39,8 +29,6 @@ const PRODUCTOS = [
     imagen: "https://images.pexels.com/photos/1040160/pexels-photo-1040160.jpeg?w=600&h=450&fit=crop",
     whatsapp: "Hola, me interesa el Mini Proyector Portátil a $345.000. ¿Está disponible?"
   },
-
-  // ── BELLEZA ─────────────────────────────────────────────
   {
     id: 4,
     nombre: "Sérum Facial Vitamina C",
@@ -67,21 +55,19 @@ const PRODUCTOS = [
     precio: "$185.000",
     categoria: "Belleza",
     etiqueta: "",
-    descripcion: "Limpiador, tónico y crema hidratante. Rutina de 3 pasos para piel luminosa y saludable. Kit completo.",
+    descripcion: "Limpiador, tónico y crema hidratante. Rutina de 3 pasos para piel luminosa y saludable.",
     imagen: "https://images.pexels.com/photos/3373736/pexels-photo-3373736.jpeg?w=600&h=450&fit=crop",
     whatsapp: "Hola, me interesa el Kit Skincare Ritual 828 a $185.000. ¿Está disponible?"
   },
-
-  // ── HOGAR ───────────────────────────────────────────────
   {
     id: 7,
-    nombre: "Difusor Aromático Nebulizador",
-    precio: "$145.000",
+    nombre: "Limpiador de Ventanas Magnético",
+    precio: "$35.000",
     categoria: "Hogar",
     etiqueta: "Más vendido",
-    descripcion: "Ultrasónico silencioso, 7 colores LED, apagado automático. Humidifica y aromatiza. 500ml.",
-    imagen: "https://images.pexels.com/photos/3270223/pexels-photo-3270223.jpeg?w=600&h=450&fit=crop",
-    whatsapp: "Hola, me interesa el Difusor Aromático a $145.000. ¿Está disponible?"
+    descripcion: "Limpia ambos lados a la vez. Ideal para ventanas y espejos. Fácil de usar. Acabado impecable.",
+    imagen: "https://i.ibb.co/nMDfQ57N/Whats-App-Image-2026-06-23-at-1-34-03-PM.jpg",
+    whatsapp: "Hola, me interesa el Limpiador de Ventanas Magnético a $35.000. ¿Está disponible?"
   },
   {
     id: 8,
@@ -99,31 +85,4 @@ const PRODUCTOS = [
     precio: "$112.000",
     categoria: "Hogar",
     etiqueta: "Nuevo",
-    descripcion: "6 piezas en bambú y acero inoxidable. Bandeja, porta-lápices, sujetapapeles y accesorios de escritorio.",
-    imagen: "https://images.pexels.com/photos/6957615/pexels-photo-6957615.jpeg?w=600&h=450&fit=crop",
-    whatsapp: "Hola, me interesa el Set Organizador Premium a $112.000. ¿Está disponible?"
-  }
-
-];
-{
-  id: 7,
-  nombre: "Limpiador de Ventanas Magnético",
-  precio: "$35.000",
-  categoria: "Hogar",
-  etiqueta: "Más vendido",
-  descripcion: "Limpia ambos lados a la vez. Ideal para ventanas y espejos. Fácil de usar. Acabado impecable.",
-  imagen: "https://i.ibb.co/nMDfQ57N/Whats-App-Image-2026-06-23-at-1-34-03-PM.jpg",
-  whatsapp: "Hola, me interesa el Limpiador de Ventanas Magnético a $35.000. ¿Está disponible?"
-},
-// ============================================================
-//  CONFIGURACIÓN GENERAL — cambia según tu negocio
-// ============================================================
-const CONFIG = {
-  whatsappNumero: "573205584974",
-  nombreTienda: "Eight Two Eight",
-  instagram: "https://instagram.com/828store",
-  tiktok: "",
-  emailContacto: "catabohada@gmail.com",
-  ciudadEnvio: "Colombia",
-  tiempoEntrega: "1 a 2 días hábiles"
-};
+    descripcion: "6 piezas en bambú y acero inoxidable. Bandeja, porta-lápices y accesorios de
