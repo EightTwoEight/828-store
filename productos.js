@@ -105,7 +105,16 @@ const PRODUCTOS = [
   }
 
 ];
-
+{
+  id: 7,
+  nombre: "Limpiador de Ventanas Magnético",
+  precio: "$35.000",
+  categoria: "Hogar",
+  etiqueta: "Más vendido",
+  descripcion: "Limpia ambos lados a la vez. Ideal para ventanas y espejos. Fácil de usar. Acabado impecable.",
+  imagen: "https://i.ibb.co/nMDfQ57N/Whats-App-Image-2026-06-23-at-1-34-03-PM.jpg",
+  whatsapp: "Hola, me interesa el Limpiador de Ventanas Magnético a $35.000. ¿Está disponible?"
+},
 // ============================================================
 //  CONFIGURACIÓN GENERAL — cambia según tu negocio
 // ============================================================
