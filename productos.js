@@ -1,5 +1,16 @@
 const PRODUCTOS = [
   {
+    id: 11,
+    nombre: "Combo Bienestar: Tensiómetro + Oxímetro",
+    precio: "$80.000",
+    categoria: "Tecnologia",
+    etiqueta: "Nuevo",
+    descripcion: "Tensiómetro digital + Oxímetro de pulso. Envío gratis a toda Colombia. 10% OFF pagando por adelantado: $72.000.",
+    imagen: "combo.jpg",
+    landing: "#combo",
+    whatsapp: "Hola, me interesa el Combo Bienestar (Tensiómetro + Oxímetro) a $80.000. ¿Está disponible?"
+  },
+  {
     id: 1,
     nombre: "Smart Band Pro X",
     precio: "$189.000",
@@ -102,7 +113,7 @@ const PRODUCTOS = [
 ];
 
 const CONFIG = {
-  whatsappNumero: "573205584974",
+  whatsappNumero: "573182711886",
   nombreTienda: "Eight Two Eight",
   instagram: "https://instagram.com/828store",
   tiktok: "",

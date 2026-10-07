@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
         searchOverlay.classList.remove('active');
         searchInput.value = '';
         searchResults.innerHTML = '';
-        abrirModal(p);
+        if (p.landing) { window.location.href = p.landing; } else { abrirModal(p); }
       });
       searchResults.appendChild(el);
     });
@@ -137,8 +137,10 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>`;
 
       // Click en card → abrir modal
-      card.querySelector('.pc-img-wrap').addEventListener('click', () => abrirModal(p));
-      card.querySelector('.pc-name').addEventListener('click', () => abrirModal(p));
+      // Si el producto tiene landing propia, la abre; si no, abre el modal
+      const abrir = () => p.landing ? (window.location.href = p.landing) : abrirModal(p);
+      card.querySelector('.pc-img-wrap').addEventListener('click', abrir);
+      card.querySelector('.pc-name').addEventListener('click', abrir);
 
       // Click en botón → WhatsApp directo
       card.querySelector('.pc-cta').addEventListener('click', (e) => {
